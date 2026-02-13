@@ -1,0 +1,16 @@
+---
+const {title, img, shape} = Astro.props;
+---
+
+<article>
+    <img class={shape} src={img} alt={title}>
+<h3>{title}</h3>
+<p>Subtitle</p>
+</article>
+
+
+<style>
+    .round{
+        border-radius: 999px;
+    }
+</style>

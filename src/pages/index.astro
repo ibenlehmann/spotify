@@ -1,17 +1,26 @@
 ---
-
+import "../style/global.css";
+import Artist from "../components/Artist.astro";
+import Sidebar from "../components/Sidebar.astro";
+import Header from "../components/Header.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Hjem</title>
+    <link rel="stylesheet" href="global.css" />
+  </head>
+
+  <body>
+    <main>
+      <Header />
+      <div class="grid">
+        <Sidebar />
+        <Artist />
+      </div>
+    </main>
+  </body>
 </html>
